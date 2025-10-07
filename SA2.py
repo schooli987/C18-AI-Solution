@@ -6,10 +6,11 @@ model = tf.keras.models.load_model("keras_model.h5")
 
 # Step 2: Load class labels (same order as in labels.txt)
 CLASS_NAMES = [
+    " Angelina Jolie",
     "Timothée Chalamet",
     "Zendaya",
-    "Tom Cruise",
-    "Angelina Jolie"
+    "Tom Cruise"
+
 ]
 
 # Step 3: Open webcam
@@ -35,3 +36,4 @@ while True:
 # Step 5: Release resources
 cap.release()
 cv2.destroyAllWindows()
+
