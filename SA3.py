@@ -7,14 +7,12 @@ model = tf.keras.models.load_model("keras_model.h5")
 
 # Labels must match your model's labels.txt
 CLASS_NAMES = [
-    "Timothée Chalamet",  
-    "Zendaya",            # Hollywood
-    "Tom Cruise",     # Hollywood
-    "Angelina Jolie",      # Hollywood
+    " Angelina Jolie",
+    "Timothée Chalamet",
+    "Zendaya",
+    "Tom Cruise"
 
 ]
-
-# Open webcam
 cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
@@ -48,3 +46,4 @@ while True:
 # Release resources
 cap.release()
 cv2.destroyAllWindows()
+
